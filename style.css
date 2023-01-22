@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: #00ff00;
+  font-family: Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+.container {
+  border: 0.4rem solid #fff;
+  border-radius: 0.5rem;
+  width: 15rem;
+  height: 7rem;
+  position: relative;
+  padding-top: 0.6rem;
+  padding-left: 0.6rem;
+  margin-bottom: 4rem;
+}
+
+.container::before {
+  content: "";
+  width: 0.4rem;
+  height: 3rem;
+  background-color: #fff;
+  border: 0.5rem solid #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 100%;
+  top: 17%;
+}
+
+#charge {
+  background-color: #0f0;
+  width: 13rem;
+  height: 5rem;
+}
+
+.active {
+  animation: charge-animation 3s infinite linear;
+}
+
+@keyframes charge-animation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 13rem;
+  }
+}
+
+#charge-level {
+  color: #fff;
+  position: absolute;
+  top: 23%;
+  left: 33%;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#charging-time {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  position: relative;
+  bottom: 25%;
+}
