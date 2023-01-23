@@ -82,3 +82,51 @@ h1 {
   position: relative;
   bottom: 25%;
 }
+
+/* responsive code */
+
+@media (max-width: 576px) {
+  h1 {
+    color: #00ff00;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+
+  #charge {
+    background-color: #0f0;
+    width: 13rem;
+    height: 5rem;
+  }
+
+  .active {
+    animation: charge-animation 3s infinite linear;
+  }
+
+  @keyframes charge-animation {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 13rem;
+    }
+  }
+
+  #charge-level {
+    color: #fff;
+    position: absolute;
+    top: 23%;
+    left: 33%;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  #charging-time {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    bottom: 25%;
+  }
+}
